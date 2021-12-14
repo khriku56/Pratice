@@ -1,0 +1,187 @@
+/* Meu CSS */
+body,
+html{
+	margin:  0; 
+	padding: 0;
+	font-size:18px;
+}
+body{
+	background:rgb(167, 151, 151);
+	background-size:100%;
+	background-attachment:fixed;
+}
+hr{
+	background-color:rgb(0, 0, 0);
+}
+a, a img{
+	color: aquamarine;
+	text-decoration:none;
+	border:none;
+	z-index: -1;
+}
+p{color: rgb(0, 0, 0);}
+h2{color: rgb(0, 0, 0);}
+h1{color: rgb(0, 0, 0);}
+h3{color: rgb(0, 0, 0);}
+img{
+	max-width:100%;
+	height:auto;
+	position:relative;
+	z-index:0;
+}
+.principal{
+	width: 960px;
+	color: #444;
+	margin: 0 auto;
+	font-family:sans-serif;
+}
+.cabecalho, 
+.logo, 
+.rodape,
+.menu{
+	width:100%;
+	display:block;
+	clear:both;
+}
+.cabecalho{
+	height:100px;
+}
+.logo-cabecalho{
+	float:left;
+}
+.logo-cabecalho a{
+	font-size:50px;
+	font-style:italic;
+	text-decoration:none;
+	color:#000;
+	display:block;
+	padding:20px 0 0 0;
+}
+.menu{
+	background:#4CAF50;
+}
+.menu ul li, 
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.menu ul li{
+	display:inline-block;
+}
+.menu ul li a{
+	display:block;
+	color:rgb(255, 255, 255);
+	padding:13px 20px;
+}
+.corpo{
+	position:relative;
+	overflow:hidden;
+}
+.artigos{
+	float:left;
+}
+.artigos, .artigos:before{
+	width:70%;
+}
+.artigos:before{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	background:rgb(255, 255, 255);
+	z-index:-1;
+	content:'';
+}
+.barra-lateral{
+	float:right;
+}
+.barra-lateral, .barra-lateral:before{
+	width:30%;
+}
+.barra-lateral:before{
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+	right:0;
+    z-index: -1;
+    background: #5e524b;
+}
+.espacamento{
+	padding:20px;
+}
+.rodape{
+	padding:20px 0 0 0;
+	text-align:center;
+	background: #dd373f;
+}
+
+/*Criação do menu dropdown*/
+
+/* estilo do menu */
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  .menubutton {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  } 
+  /* Container <div> - necessário para criação do menu */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* conteúdo do menu (escondido por Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links dentro do menu */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  /* muda opções da sidebar do flex container */
+  .flex-cont { 
+	display:flex;  
+	flex-direction: column;
+	} 
+/*opções do grid container*/
+.grid-container {
+	display: grid;
+	grid-template-columns: 300px 300px;
+	justify-content: start;
+  }
+  
+  /* muda cor do botão quando mouse encima */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* mostra o menu quando mouse encima */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  /* muda cor de fundo do botão do menu quando está aberto */
+  .menubutton:hover{
+  background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+  }
